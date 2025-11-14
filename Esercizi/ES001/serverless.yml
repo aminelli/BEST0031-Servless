@@ -12,3 +12,10 @@ functions:
       - http:
           path: /hello
           method: get
+
+recources:
+  Resources:
+    DataQueue:
+      Type: AWS::SQS::Queue
+      Properties:
+        QueueName: "data-events"
